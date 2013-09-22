@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:padding="10dp" >
+
+    <TextView
+        android:id="@+id/route_information"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/default_route"
+        android:textSize="20sp" />
+
+    <ImageView
+    	android:id="@+id/thumbnail"
+    	android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+     	android:src="@drawable/ic_launcher"
+     	android:layout_below="@id/route_information"
+     	android:layout_alignParentLeft="true"
+     	android:contentDescription="@string/thumbnail_description" />
+        
+    <TextView
+	    android:id="@+id/seats_available"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="@string/default_seats_number"
+	    android:textSize="20sp"
+	    android:layout_below="@id/route_information"
+	    android:layout_toRightOf="@+id/thumbnail" />
+    
+    <TextView
+	    android:id="@+id/date_time_information"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="@string/default_date_time"
+	    android:textSize="20sp"
+	    android:layout_below="@id/seats_available"
+     	android:layout_toRightOf="@+id/thumbnail" />
+    
+    <ImageView
+    	android:id="@+id/arrow"
+    	android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+     	android:src="@drawable/ic_launcher"
+     	android:layout_below="@id/route_information"
+     	android:layout_alignParentRight="true"
+     	android:contentDescription="@string/arrow_description" />
+
+    <RatingBar
+        android:id="@+id/rating"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/seats_available"
+        android:paddingTop="4dp"
+        android:layout_toRightOf="@+id/seats_available"
+        android:focusable="false"
+        android:isIndicator="false" />
+    
+</RelativeLayout>

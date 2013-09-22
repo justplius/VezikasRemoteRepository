@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+   
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical" >
+
+	    <TextView
+	        android:id="@+id/route_text"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:text="@string/route_text"
+	        android:textAppearance="?android:attr/textAppearanceLarge" />
+	
+	    <TextView
+	        android:id="@+id/route"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:text="@string/route"
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+	    <Spinner
+	        android:id="@+id/spinner_city"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center" />
+
+	    <LinearLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center" >
+
+	        <Button
+	            android:id="@+id/add_button"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/add_button" />
+
+	        <Button
+	            android:id="@+id/remove_button"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/remove_button" />
+
+	    </LinearLayout>
+
+	    <CheckBox
+	        android:id="@+id/roundtrip"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:text="@string/roundtrip"
+	        android:visibility="gone" />
+
+	    <LinearLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center" >
+
+	        <CheckBox
+	            android:id="@+id/take_from_region"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:checked="true"
+	            android:text="@string/take_from_region"
+	            android:visibility="gone" />
+
+	        <CheckBox
+	            android:id="@+id/drop_of_in_region"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:checked="true"
+	            android:text="@string/drop_of_in_region"
+	            android:visibility="gone" />
+
+	    </LinearLayout>
+
+	    <TextView
+	        android:id="@+id/leaving_day_text"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:text="@string/leaving_day_text"
+	        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+	    <DatePicker
+	        android:id="@+id/leaving_day"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center_horizontal"
+	        android:calendarViewShown="false"
+	        android:spinnersShown="true" />
+
+	    <TextView
+	        android:id="@+id/leaving_time_text"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:text="@string/leaving_time_text"
+	        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+	    <RelativeLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center" >
+
+	        <TimePicker
+	            android:id="@+id/leaving_time"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentLeft="true" />
+
+	        <LinearLayout
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentRight="true"
+	            android:layout_alignParentTop="true"
+	            android:layout_centerVertical="true"
+	            android:layout_marginRight="16dp"
+	            android:layout_toRightOf="@id/leaving_time"
+	            android:orientation="vertical" >
+
+	            <CheckBox
+	                android:id="@+id/leaving_time_flexible"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:checked="true"
+	                android:text="@string/time_flexible" />
+
+	            <SeekBar
+	                android:id="@+id/leaving_time_seekbar"
+	                android:layout_width="match_parent"
+	                android:layout_height="0dp"
+	                android:layout_gravity="center"
+	                android:layout_weight="1"
+	                android:max="10"
+	                android:progress="1" />
+
+	            <TextView
+	                android:id="@+id/leaving_time_flexible_value"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_gravity="center"
+	                android:text="@string/time_flexible_value"
+	                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+	        </LinearLayout>
+
+	    </RelativeLayout>
+
+	    <TextView
+	        android:id="@+id/dropping_day_text"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:text="@string/dropping_day_text"
+	        android:textAppearance="?android:attr/textAppearanceLarge"
+	        android:visibility="gone" />
+	
+	    <DatePicker
+	        android:id="@+id/dropping_day"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:calendarViewShown="false"
+	        android:spinnersShown="true"
+	        android:visibility="gone" />
+
+	    <TextView
+	        android:id="@+id/dropping_time_text"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:text="@string/dropping_time_text"
+	        android:textAppearance="?android:attr/textAppearanceLarge"
+	        android:visibility="gone" />
+
+	    <RelativeLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:visibility="gone" >
+
+	        <TimePicker
+	            android:id="@+id/dropping_time"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content" />
+
+	        <LinearLayout
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentRight="true"
+	            android:layout_alignParentTop="true"
+	            android:layout_centerVertical="true"
+	            android:layout_marginRight="16dp"
+	            android:layout_toRightOf="@id/dropping_time"
+	            android:orientation="vertical" >
+
+	            <CheckBox
+	                android:id="@+id/dropping_time_flexible"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:checked="true"
+	                android:text="@string/time_flexible" />
+
+	            <SeekBar
+	                android:id="@+id/dropping_time_seekbar"
+	                android:layout_width="match_parent"
+	                android:layout_height="0dp"
+	                android:layout_gravity="center"
+	                android:layout_weight="1"
+	                android:max="10"
+	                android:progress="1" />
+
+	            <TextView
+	                android:id="@+id/dropping_time_flexible_value"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_gravity="center"
+	                android:text="@string/time_flexible_value"
+	                android:textAppearance="?android:attr/textAppearanceMedium" />
+	        </LinearLayout>
+
+	    </RelativeLayout>
+
+	    <TableLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center" >
+
+	        <TableRow
+	            android:id="@+id/tableRow1"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content" >
+
+	            <TextView
+	                android:id="@+id/seats_available_text"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_gravity="center"
+	                android:text="@string/seats_available_text"
+	                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+	            <TextView
+	                android:id="@+id/price_text"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_gravity="center"
+	                android:text="@string/price_text"
+	                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+	        </TableRow>
+
+	        <TableRow
+	            android:id="@+id/tableRow2"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content" >
+
+	            <EditText
+	                android:id="@+id/seats_available"
+	                android:layout_width="150dp"
+	                android:layout_height="wrap_content"
+	                android:ems="10"
+	                android:inputType="number"
+	                android:text="4" >
+
+	                <requestFocus />
+	            </EditText>
+
+	            <EditText
+	                android:id="@+id/price"
+	                android:layout_width="150dp"
+	                android:layout_height="wrap_content"
+	                android:ems="10"
+	                android:inputType="number"
+	                android:text="0" />
+
+	        </TableRow>
+
+	        <TableRow
+	            android:id="@+id/tableRow3"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content" >
+	        </TableRow>
+
+	        <TableRow
+	            android:id="@+id/tableRow4"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content" >
+	        </TableRow>
+	    </TableLayout>
+
+	    <TextView
+	        android:id="@+id/phone_text"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:text="@string/phone_text"
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+	    <EditText
+	        android:id="@+id/phone"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:ems="10"
+	        android:inputType="phone"
+	        android:text="86" />
+
+	    <TextView
+	        android:id="@+id/message_text"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:text="@string/message_text"
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+	    <EditText
+	        android:id="@+id/message"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:inputType="text"
+	        android:ems="10" />
+
+	    <LinearLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center" >
+
+	        <Button
+	            android:id="@+id/confirm_button"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/confirm_button" />
+	    </LinearLayout>
+    
+    </LinearLayout>
+
+</ScrollView>
