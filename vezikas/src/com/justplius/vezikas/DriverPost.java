@@ -6,6 +6,7 @@ import android.content.Context;
 import android.text.format.Time;
 
 public class DriverPost {
+	//comment
 	
 	//Post data
 	private float rating;	
