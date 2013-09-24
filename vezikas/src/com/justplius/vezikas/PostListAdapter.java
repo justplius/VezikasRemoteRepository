@@ -70,7 +70,7 @@ public class PostListAdapter extends ArrayAdapter<DriverPost> {
 	            holder.thumbnail = (ImageView) convertView.findViewById(R.id.thumbnail);	            
 	            holder.seats_available = (TextView) convertView.findViewById(R.id.seats_available);	            
 	            holder.date_time_information = (TextView) convertView.findViewById(R.id.date_time_information);	            
-	            holder.rating = (RatingBar) convertView.findViewById(R.id.rating);
+	
 	            break;
 	        }
 	        convertView.setTag(holder);

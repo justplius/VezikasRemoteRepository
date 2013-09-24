@@ -48,5 +48,16 @@
      	android:layout_below="@id/route_information"
      	android:layout_alignParentRight="true"
      	android:contentDescription="@string/arrow_description" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/seats_available"
+        android:layout_alignBottom="@+id/seats_available"
+        android:layout_alignRight="@+id/date_time_information"
+        android:layout_marginRight="14dp"
+        android:text="@string/default_seats_number"
+        android:textSize="20sp" />
     
 </RelativeLayout>

@@ -155,17 +155,6 @@ public class MainActivity extends SherlockFragmentActivity {
         	mActionBar.setDisplayShowTitleEnabled(true);
         }
         
-        Button facebook_button = (Button) findViewById(R.id.facebook_button);
-        facebook_button.setOnClickListener(new View.OnClickListener (){
-
-			@Override
-			public void onClick(View v) {
-				setContentView(R.layout.activity_main);
-				Intent intent = new Intent(MainActivity.this, FacebookConnectActivity.class);
-		        startActivity(intent);
-			}
-        	
-        });
     }
     
     @SuppressWarnings("deprecation")
