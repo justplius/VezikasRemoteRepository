@@ -202,7 +202,6 @@ int drawable btn_login 0x7f020055
 int drawable btn_logout 0x7f020056
 int drawable ic_launcher 0x7f020057
 int drawable new_driver_post 0x7f020058
-int id TextView01 0x7f040053
 int id abs__action_bar 0x7f040022
 int id abs__action_bar_container 0x7f040021
 int id abs__action_bar_subtitle 0x7f040011
@@ -232,7 +231,7 @@ int id abs__textButton 0x7f040013
 int id abs__title 0x7f04001b
 int id abs__titleDivider 0x7f04001c
 int id abs__up 0x7f04000b
-int id action_settings 0x7f040054
+int id action_settings 0x7f040053
 int id add_button 0x7f04002e
 int id arrow 0x7f040052
 int id confirm_button 0x7f04004d
