@@ -19,6 +19,7 @@ import org.json.JSONObject;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.Point;
 import android.graphics.drawable.Drawable;
@@ -30,7 +31,9 @@ import android.support.v4.view.ViewPager;
 import android.util.Log;
 import android.view.Display;
 import android.view.Surface;
+import android.view.View;
 import android.view.WindowManager;
+import android.widget.Button;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
@@ -152,6 +155,17 @@ public class MainActivity extends SherlockFragmentActivity {
         	mActionBar.setDisplayShowTitleEnabled(true);
         }
         
+        Button facebook_button = (Button) findViewById(R.id.facebook_button);
+        facebook_button.setOnClickListener(new View.OnClickListener (){
+
+			@Override
+			public void onClick(View v) {
+				setContentView(R.layout.activity_main);
+				Intent intent = new Intent(MainActivity.this, FacebookConnectActivity.class);
+		        startActivity(intent);
+			}
+        	
+        });
     }
     
     @SuppressWarnings("deprecation")
