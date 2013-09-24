@@ -6,7 +6,7 @@ import android.content.Context;
 import android.text.format.Time;
 
 public class DriverPost {
-	//ciaciacia 2
+	//ciaciacia 54
 	//Post data
 	private float rating;	
 	private int seats_available;
