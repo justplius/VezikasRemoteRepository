@@ -21,15 +21,6 @@
      	android:layout_below="@id/route_information"
      	android:layout_alignParentLeft="true"
      	android:contentDescription="@string/thumbnail_description" />
-        
-    <TextView
-	    android:id="@+id/seats_available"
-	    android:layout_width="wrap_content"
-	    android:layout_height="wrap_content"
-	    android:text="@string/default_seats_number"
-	    android:textSize="20sp"
-	    android:layout_below="@id/route_information"
-	    android:layout_toRightOf="@+id/thumbnail" />
     
     <TextView
 	    android:id="@+id/date_time_information"
@@ -48,5 +39,14 @@
      	android:layout_below="@id/route_information"
      	android:layout_alignParentRight="true"
      	android:contentDescription="@string/arrow_description" />
+
+    <TextView
+        android:id="@+id/seats_available"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/arrow"
+        android:layout_centerHorizontal="true"
+        android:text="@string/default_seats_number"
+        android:textSize="20sp" />
     
 </RelativeLayout>
