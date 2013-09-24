@@ -48,16 +48,5 @@
      	android:layout_below="@id/route_information"
      	android:layout_alignParentRight="true"
      	android:contentDescription="@string/arrow_description" />
-
-    <RatingBar
-        android:id="@+id/rating"
-        style="?android:attr/ratingBarStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/seats_available"
-        android:paddingTop="4dp"
-        android:layout_toRightOf="@+id/seats_available"
-        android:focusable="false"
-        android:isIndicator="false" />
     
 </RelativeLayout>
