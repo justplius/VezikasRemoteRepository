@@ -7,8 +7,7 @@ import android.text.format.Time;
 
 public class DriverPost {
 	//comment
-	//ssshhj
-	
+
 	//Post data
 	private float rating;	
 	private int seats_available;
