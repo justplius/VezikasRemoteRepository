@@ -1,154 +1,149 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
     <string name="app_name">Pavežikas</string>
     <string name="action_settings">Nustatymai</string>
     <string name="title_activity_main">Pavežikas</string>
     <string name="Fragment2">This is ActionBarSherlock Fragment 2</string>
-    <string name="default_route">Maršrutas</string>
-    <string name="default_seats_number">laisvų vietų |&#160;</string>
-    <string name="default_date_time">data | išvykimo laikas</string>
-    <string name="thumbnail_description">Piktograma</string>
-    <string name="arrow_description">Plačiau</string>
-    <string name="new_post_description">Naujas skelbimas</string>
-    <string name="route">(pridėkite iš sąrašo žemiau)</string>
-    <string name="route_text">Maršrutas</string>
-    <string name="add_button">Pridėti</string>
-    <string name="remove_button">Pašalinti</string>
-    <string name="roundtrip">Vysktu į abi puses</string>
-    <string name="take_from_region">Paimu rajone</string>
-    <string name="drop_of_in_region">Paleidžiu rajone</string>
-    <string name="leaving_day_text">Išvykimo diena</string>
-    <string name="leaving_time_text">Išvykimo laikas</string>
-    <string name="time_flexible_value">+- 30 min.</string>
-    <string name="dropping_day_text">Grįžimo diena</string>
-    <string name="dropping_time_text">Grįžimo laikas</string>
-    <string name="time_flexible">Derinamas</string>
-    <string name="seats_available_text">Vietų skaičius</string>
-    <string name="price_text">Kaina, Lt</string>
-    <string name="phone_text">Telefonas</string>
-    <string name="message_text">Žinutė</string>
-    <string name="confirm_button">Skelbti skelbimą!</string>
-    <string name="error_inserting_driver_post_route">Maršrutui parinkite bent 2 miestus. </string>
-    <string name="error_inserting_driver_post_seats_number"> Nurodykite teisingą laisvų vietų skaičių (iki 9). </string>
-    <string name="error_inserting_driver_post_price"> Nurodykite teisingą pavežimo kainą (iki 300). </string>
-    <string name="error_inserting_driver_post_date_time"> Nustatykite teisingą išvykimo datą ir laiką (turi būti ne praeityje). </string>
-    <string name="message_successful_insert_post">Skelbimas sėkmingai įterptas!</string>
-    <string name="message_unsuccessful_insert_post">Skelbimo nepavyko įterpti! Bandykite dar kartą.</string>
-    <string name="url_select_from_route">http://vezikas.bugs3.com/json_db_access/selectFromRoute.php</string>
-    <string name="url_insert_to_route">http://vezikas.bugs3.com/json_db_access/insertToRoute.php</string>
-    <string name="url_select_from_phone">http://vezikas.bugs3.com/json_db_access/selectFromPhone.php</string>
-    <string name="url_insert_to_phone">http://vezikas.bugs3.com/json_db_access/insertToPhone.php</string>
-    <string name="url_insert_to_driverpost">http://vezikas.bugs3.com/json_db_access/insertToDriverPost.php</string>
-
-    <string-array name="cities_list">
-        <item>Vilnius</item>
-        <item>Kaunas</item>
-        <item>Klaipėda</item>
-        <item>Šiauliai</item>
-        <item>Panevėžys</item>
-        <item>Alytus</item>
-        <item>Akmenė</item>
-        <item>Anykščiai</item>
-        <item>Ariogala</item>
-        <item>Baltoji Vokė</item>
-        <item>Birštonas</item>
-        <item>Biržai</item>
-        <item>Daugai</item>
-        <item>Druskininkai</item>
-        <item>Dūkštas</item>
-        <item>Dusetos</item>
-        <item>Eišiškės</item>
-        <item>Elektrėnai</item>
-        <item>Ežerėlis</item>
-        <item>Gargždai</item>
-        <item>Garliava</item>
-        <item>Gelgaudiškis</item>
-        <item>Grigiškės</item>
-        <item>Ignalina</item>
-        <item>Jieznas</item>
-        <item>Jonava</item>
-        <item>Joniškėlis</item>
-        <item>Joniškis</item>
-        <item>Jurbarkas</item>
-        <item>Kaišiadorys</item>
-        <item>Kalvarija</item>
-        <item>Kavarskas</item>
-        <item>Kazlų Rūda</item>
-        <item>Kėdainiai</item>
-        <item>Kelmė</item>
-        <item>Kybartai</item>
-        <item>Kretinga</item>
-        <item>Kudirkos Naumiestis</item>
-        <item>Kupiškis</item>
-        <item>Kuršėnai</item>
-        <item>Lazdijai</item>
-        <item>Lentvaris</item>
-        <item>Linkuva</item>
-        <item>Marijampolė</item>
-        <item>Mažeikiai</item>
-        <item>Molėtai</item>
-        <item>Naujoji Akmenė</item>
-        <item>Nemenčinė</item>
-        <item>Neringa</item>
-        <item>Nida</item>
-        <item>Obeliai</item>
-        <item>Pabradė</item>
-        <item>Pagėgiai</item>
-        <item>Pakruojis</item>
-        <item>Palanga</item>
-        <item>Pandėlys</item>
-        <item>Panemunė</item>
-        <item>Pasvalys</item>
-        <item>Plungė</item>
-        <item>Priekulė</item>
-        <item>Prienai</item>
-        <item>Radviliškis</item>
-        <item>Ramygala</item>
-        <item>Raseiniai</item>
-        <item>Rietavas</item>
-        <item>Rokiškis</item>
-        <item>Rūdiškės</item>
-        <item>Salantai</item>
-        <item>Seda</item>
-        <item>Simnas</item>
-        <item>Skaudvilė</item>
-        <item>Skuodas</item>
-        <item>Smalininkai</item>
-        <item>Subačius</item>
-        <item>Šakiai</item>
-        <item>Šalčininkai</item>
-        <item>Šeduva</item>
-        <item>Šilalė</item>
-        <item>Šilutė</item>
-        <item>Širvintos</item>
-        <item>Švenčionėliai</item>
-        <item>Švenčionys</item>
-        <item>Tauragė</item>
-        <item>Telšiai</item>
-        <item>Tytuvėnai</item>
-        <item>Trakai</item>
-        <item>Troškūnai</item>
-        <item>Ukmergė</item>
-        <item>Utena</item>
-        <item>Užventis</item>
-        <item>Vabalninkas</item>
-        <item>Varėna</item>
-        <item>Varniai</item>
-        <item>Veisiejai</item>
-        <item>Venta</item>
-        <item>Viekšniai</item>
-        <item>Vievis</item>
-        <item>Vilkaviškis</item>
-        <item>Vilkija</item>
-        <item>Virbalis</item>
-        <item>Visaginas</item>
-        <item>Zarasai</item>
-        <item>Žagarė</item>
-        <item>Žiežmariai</item>
-    </string-array>
-
-    <string name="title_activity_facebook_connect">FacebookConnectActivity</string>
-    <string name="hello_world">Hello world!</string>
-
+ 	<string name="default_route">Maršrutas</string>
+ 	<string name="default_seats_number">laisvų vietų |&#160;</string>
+ 	<string name="default_date_time">data | išvykimo laikas</string>
+ 	<string name="thumbnail_description">Piktograma</string>
+ 	<string name="arrow_description">Plačiau</string>
+ 	<string name="new_post_description">Naujas skelbimas</string>
+ 	<string name="route">(pridėkite iš sąrašo žemiau)</string>
+ 	<string name="route_text">Maršrutas</string>
+ 	<string name="add_button">Pridėti</string>
+ 	<string name="remove_button">Pašalinti</string>
+ 	<string name="roundtrip">Vysktu į abi puses</string>
+ 	<string name="take_from_region">Paimu rajone</string>
+ 	<string name="drop_of_in_region">Paleidžiu rajone</string>
+ 	<string name="leaving_day_text">Išvykimo diena</string>
+ 	<string name="leaving_time_text">Išvykimo laikas</string>
+ 	<string name="time_flexible_value">+- 30 min.</string>
+ 	<string name="dropping_day_text">Grįžimo diena</string>
+ 	<string name="dropping_time_text">Grįžimo laikas</string>
+ 	<string name="time_flexible">Derinamas</string>
+ 	<string name="seats_available_text">Vietų skaičius</string>
+ 	<string name="price_text">Kaina, Lt</string>
+ 	<string name="phone_text">Telefonas</string>
+ 	<string name="message_text">Žinutė</string>
+ 	<string name="confirm_button">Skelbti skelbimą!</string>
+ 	<string name="error_inserting_driver_post_route">Maršrutui parinkite bent 2 miestus. </string>
+ 	<string name="error_inserting_driver_post_seats_number"> Nurodykite teisingą laisvų vietų skaičių (iki 9). </string>
+ 	<string name="error_inserting_driver_post_price"> Nurodykite teisingą pavežimo kainą (iki 300). </string>
+ 	<string name="error_inserting_driver_post_date_time"> Nustatykite teisingą išvykimo datą ir laiką (turi būti ne praeityje). </string>
+ 	<string name="message_successful_insert_post">Skelbimas sėkmingai įterptas!</string> 
+ 	<string name="message_unsuccessful_insert_post">Skelbimo nepavyko įterpti! Bandykite dar kartą.</string> 	
+ 	<string name="url_select_from_route">http://10.0.2.2/selectFromRoute.php</string>
+ 	<string name="url_insert_to_route">http://10.0.2.2/insertToRoute.php</string>
+ 	<string name="url_select_from_phone">http://10.0.2.2/selectFromPhone.php</string>
+ 	<string name="url_insert_to_phone">http://10.0.2.2/insertToPhone.php</string>
+ 	<string name="url_insert_to_driverpost">http://10.0.2.2/insertToDriverPost.php</string>
+ 	
+ 	<string-array name="cities_list">
+ 	    <item>Vilnius</item>
+ 	    <item>Kaunas</item>
+ 	    <item>Klaipėda</item>
+ 	    <item>Šiauliai</item>
+ 	    <item>Panevėžys</item>
+ 	    <item>Alytus</item>
+ 	    <item>Akmenė</item>
+ 	    <item>Anykščiai</item>
+ 	    <item>Ariogala</item>
+ 	    <item>Baltoji Vokė</item>
+ 	    <item>Birštonas</item>
+ 	    <item>Biržai</item>
+ 	    <item>Daugai</item>
+ 	    <item>Druskininkai</item>
+ 	    <item>Dūkštas</item>
+ 	    <item>Dusetos</item>
+ 	    <item>Eišiškės</item>
+ 	    <item>Elektrėnai</item>
+ 	    <item>Ežerėlis</item>
+ 	    <item>Gargždai</item>
+ 	    <item>Garliava</item>
+ 	    <item>Gelgaudiškis</item>
+ 	    <item>Grigiškės</item>
+ 	    <item>Ignalina</item>
+ 	    <item>Jieznas</item>
+ 	    <item>Jonava</item>
+ 	    <item>Joniškėlis</item>
+ 	    <item>Joniškis</item>
+ 	    <item>Jurbarkas</item>
+ 	    <item>Kaišiadorys</item>
+ 	    <item>Kalvarija</item>
+ 	    <item>Kavarskas</item>
+ 	    <item>Kazlų Rūda</item>
+ 	    <item>Kėdainiai</item>
+ 	    <item>Kelmė</item>
+ 	    <item>Kybartai</item>
+ 	    <item>Kretinga</item>
+ 	    <item>Kudirkos Naumiestis</item>
+ 	    <item>Kupiškis</item>
+ 	    <item>Kuršėnai</item>
+ 	    <item>Lazdijai</item>
+ 	    <item>Lentvaris</item>
+ 	    <item>Linkuva</item>
+ 	    <item>Marijampolė</item>
+ 	    <item>Mažeikiai</item>
+ 	    <item>Molėtai</item>
+ 	    <item>Naujoji Akmenė</item>
+ 	    <item>Nemenčinė</item>
+ 	    <item>Neringa</item>
+ 	    <item>Nida</item>
+ 	    <item>Obeliai</item>
+ 	    <item>Pabradė</item>
+ 	    <item>Pagėgiai</item>
+ 	    <item>Pakruojis</item>
+ 	    <item>Palanga</item>
+ 	    <item>Pandėlys</item>
+ 	    <item>Panemunė</item>
+ 	    <item>Pasvalys</item>
+ 	    <item>Plungė</item>
+ 	    <item>Priekulė</item>
+ 	    <item>Prienai</item>
+ 	    <item>Radviliškis</item>
+ 	    <item>Ramygala</item>
+ 	    <item>Raseiniai</item>
+ 	    <item>Rietavas</item>
+ 	    <item>Rokiškis</item>
+ 	    <item>Rūdiškės</item>
+ 	    <item>Salantai</item>
+ 	    <item>Seda</item>
+ 	    <item>Simnas</item>
+ 	    <item>Skaudvilė</item>
+ 	    <item>Skuodas</item>
+ 	    <item>Smalininkai</item>
+ 	    <item>Subačius</item>
+ 	    <item>Šakiai</item>
+ 	    <item>Šalčininkai</item>
+ 	    <item>Šeduva</item>
+ 	    <item>Šilalė</item>
+ 	    <item>Šilutė</item>
+ 	    <item>Širvintos</item>
+ 	    <item>Švenčionėliai</item>
+ 	    <item>Švenčionys</item>
+ 	    <item>Tauragė</item>
+ 	    <item>Telšiai</item>
+ 	    <item>Tytuvėnai</item>
+ 	    <item>Trakai</item>
+ 	    <item>Troškūnai</item>
+ 	    <item>Ukmergė</item>
+ 	    <item>Utena</item>
+ 	    <item>Užventis</item>
+ 	    <item>Vabalninkas</item>
+ 	    <item>Varėna</item>
+ 	    <item>Varniai</item>
+ 	    <item>Veisiejai</item>
+ 	    <item>Venta</item>
+ 	    <item>Viekšniai</item>
+ 	    <item>Vievis</item>
+ 	    <item>Vilkaviškis</item>
+ 	    <item>Vilkija</item>
+ 	    <item>Virbalis</item>
+ 	    <item>Visaginas</item>
+ 	    <item>Zarasai</item>
+ 	    <item>Žagarė</item>
+ 	    <item>Žiežmariai</item> 	    
+ 	</string-array>
 </resources>
